@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sokoban</title>
+</head>
+
+<body onkeyup="onHandleKey(event)" onload="onInitGame(1)">
+    <h1> SRY NO MORE LEVELS </h1>
+    <header>
+        <div class="title"> Move the boxes to the marked locations</div>
+        <div class="clock-count">score freeze for <span>0</span> more moves</div>
+        <div class="score">Your Score is: <span>100</span></div>
+    </header>
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <div class="modal">
+        <h2></h2>
+        <button onclick="onInitGameRestart()">Reset board</button>
+        <div class="nextlevel">
+            <span></span>
+            <button  onclick="onInitNextLevel()"> Next level</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
